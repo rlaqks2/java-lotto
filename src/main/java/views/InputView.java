@@ -22,7 +22,6 @@ public class InputView {
     public static int readBudget(){
         System.out.println(ConsoleMessage.INPUT_BUDGET.message);
         String budget = Console.readLine();
-        // todo validator 처리 1. 숫자확인, 2. 1000으로 나눠 떨어지는지
 
         Validator.inputBudget(budget);
         return Integer.parseInt(budget);
